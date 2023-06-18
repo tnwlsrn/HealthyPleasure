@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> 식단 </title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+     <!-- 스타일시트 -->
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+   <!-- 네비게이션 영역 시작 -->
+   <nav class="navbar navbar-expand-lg bg-light navbar-light bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.jpg" alt="로고" width="250">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto my-2">
+          <div>
+          <li class="nav-item">
+            <a class="nav-link" href="food.html">식단</a>
+          </li>
+          </div>
+          <div>
+          <li class="nav-item">
+            <a class="nav-link" href="exercise.html">운동</a>
+          </li>
+          </div>
+          <div>
+          <li class="nav-item">
+            <a class="nav-link" href="challenge.html">챌린지</a>
+          </li>
+          </div>
+          <div>
+          <li class="nav-item">
+            <a class="nav-link" href="Q&A.html">Q&A</a>
+          </li>
+          </div>
+          <div>
+          <li class="nav-item">
+            <a class="nav-link" href="로그인.html">로그인</a>
+          </li>
+        </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- 네비게이션 영역 끝 -->
+
+<!-- 식단 영역 시작 -->
+
+  <!-- 오트밀참치미역죽 -->
+    <div class="recipe_title">
+        <h4><b>오트밀참치미역죽 만들기</b></h4>
+        <p>(1인분)</p>
+        <hr class="divider">
+        <br>
+        <h6>오트밀 50g, 미역5g, 참치 60g, 물 550ml, 진간장 1, 액젓 1, 참기름, 깨</h6>
+        <p>(숟가락 계량)</p>
+    </div>
+    
+    <div class="buy_now">
+        <button type="button" class="btn btn-outline-success f_button rounded-pill" data-bs-toggle="modal" data-bs-target="#foodModal1">
+          <i class="bi bi-bag-check"></i> BUY NOW
+        </button>
+    </div>
+
+    <div class="card mb-3 recipe_card1">
+      <div class="row g-0">
+        <div class="col-md-6 recipe-image-container">
+          <img src="images/오트밀참치죽2.png" class="img-fluid rounded-start" alt="오트밀참치죽">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <div class="card-content">
+                <h5 class="card_title"><조리과정></h5>
+            
+                <ul class="recipe_content">
+                    <li>냄비에 참기름을 조금 넣고 미역을 볶아준다.</li>
+                    <li>물과 오트밀을 넣어준다.</li>
+                    <li>끓으면 진간장과 액젓으로 간을 해준다.</li>
+                    <li>참치를 넣고 졸여가며 끓여준다.</li>
+                </ul>   
+            </div>       
+            
+
+            <table class="table kal_table">
+                <thead>
+                  <tr>
+                    <th scope="col">kcal</th>
+                    <th scope="col">탄수화물</th>
+                    <th scope="col">단백질</th>
+                    <th scope="col">지방</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">328</th>
+                    <td>36.5g</td>
+                    <td>19.8g</td>
+                    <td>12.7g</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div style="display: flex; align-items: center;">
+                <a href="https://www.youtube.com/">
+                  <i class="bi bi-youtube f_youtubeicon"></i>
+                </a>
+                <p class="card-text" style="margin-left: 10px;"><small class="text-muted">영상 보러가기</small></p>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+        
+  <!-- Modal -->
+  <div class="modal fade" id="foodModal1" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header bg-body-tertiary">
+            <h1 class="modal-title fs-5 f_h4" id="foodModalLabel">추천제품</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="images/오트밀.jpg" alt="오트밀" class="img-fluid" style="width: 300px; height: auto;">
+            <p><b>플라하반 아이리쉬 포리지 오트밀 시리얼 500g</b></p>
+        </div>
+        <div class="modal-footer bg-body-tertiary">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="https://www.coupang.com/vp/products/986283?itemId=19241617&vendorItemId=3000239955&q=%ED%94%8C%EB%9D%BC%ED%95%98%EB%B0%98+%EC%98%A4%ED%8A%B8%EB%B0%80&itemsCount=36&searchId=c385bd167e734678ad31d7debef2df54&rank=1&isAddedCart=" class="btn btn-outline-success" target="_blank">BUY NOW !</a>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- 깻잎참치쌈밥 -->
+  <div class="recipe_title">
+    <h4><b>깻잎참치쌈밥</b></h4>
+    <p>(1인분)</p>
+    <hr class="divider">
+    <br>
+    <h6>데친 깻잎, 기름기 뺀 참치, 된장 1, 고추장 2, 참기름 3, 매실액 2, 양파 3, 다진대파 3, 통깨</h6>
+    <p>(숟가락 계량)</p>
+  </div>
+
+  <div class="buy_now">
+      <button type="button" class="btn btn-outline-success f_button rounded-pill" data-bs-toggle="modal" data-bs-target="#foodModal2">
+        <i class="bi bi-bag-check"></i> BUY NOW
+      </button>
+  </div>
+
+  <div class="card mb-3 recipe_card1">
+    <div class="row g-0">
+      <div class="col-md-6 recipe-image-container2">
+        <img src="images/깻잎참치.png" class="img-fluid rounded-start" alt="오트밀참치죽">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <div class="card-content">
+              <h5 class="card_title"><조리과정></h5>
+            
+              <ul class="recipe_content">
+                  <li>양파, 대파를 다지고 참치에 기름기를 빼준다.</li>
+                  <li>참치, 된장, 고추장, 양파, 대파, 참기름, 통깨를 <br>잘 섞어 참치쌈장을 만들어 준다 .</li>
+                  <li>취향에 따라 청양고추를 추가해준다.</li>
+                  <li>데친 깻잎에 밥과 참치쌈장을 넣고 말아준다.</li>
+              </ul>   
+                  
+          </div>
+
+          <table class="table kal_table">
+            <thead>
+              <tr>
+                <th scope="col">kcal</th>
+                <th scope="col">탄수화물</th>
+                <th scope="col">단백질</th>
+                <th scope="col">지방</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">528</th>
+                <td>70.5g</td>
+                <td>15.6g</td>
+                <td>22.1g</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="display: flex; align-items: center; margin-top:-10px;">
+            <a href="https://www.youtube.com/">
+              <i class="bi bi-youtube f_youtubeicon"></i>
+            </a>
+            <p class="card-text" style="margin-left: 10px;"><small class="text-muted">영상 보러가기</small></p>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- Modal -->
+<div class="modal fade" id="foodModal2" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header bg-body-tertiary">
+        <h1 class="modal-title fs-5 f_h4" id="foodModalLabel">추천제품</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <img src="images/참치.jpg" alt="참치" class="img-fluid" style="width: 300px; height: auto;">
+        <p><b>오뚜기 가벼운참치 더마일드 135g</b></p>
+    </div>
+    <div class="modal-footer bg-body-tertiary">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://www.coupang.com/vp/products/6608354312?itemId=18302800618&vendorItemId=84645999438&q=%EC%A0%80%EC%B9%BC%EB%A1%9C%EB%A6%AC+%EC%B0%B8%EC%B9%98&itemsCount=36&searchId=c15efa967e72423ab805ac3d60cb81e9&rank=19&isAddedCart=" class="btn btn-outline-success" target="_blank">BUY NOW !</a>
+    </div>
+    </div>
+</div>
+</div>
+
+
+<!-- 초코케이크 -->
+<div class="recipe_title">
+  <h4><b>초코케이크</b></h4>
+  <p>(1인분)</p>
+  <hr class="divider">
+  <br>
+  <h6>오트밀 5, 우유 4, 알룰로스 3, 무가당 코코아가루 1, 베이킹파우더 1g, 계란 1개, 다크초콜릿</h6>
+  <p>(숟가락 계량)</p>
+</div>
+
+<div class="buy_now">
+    <button type="button" class="btn btn-outline-success f_button rounded-pill" data-bs-toggle="modal" data-bs-target="#foodModal3">
+      <i class="bi bi-bag-check"></i> BUY NOW
+    </button>
+</div>
+
+<div class="card mb-3 recipe_card1">
+  <div class="row g-0">
+    <div class="col-md-6 recipe-image-container2">
+      <img src="images/초코케이크.png" class="img-fluid rounded-start" alt="초코케이크">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <div class="card-content">
+            <h5 class="card_title"><조리과정></h5>
+          
+            <ul class="recipe_content">
+                <li>다크초콜릿을 제외한 재료들을 넣고 믹서기에 갈아준다. </li>
+                <li>전자레인지 사용 가능한 용기에 반죽과 다크초코릿을 <br>넣어준다.</li>
+                <li>전자레인지에 1분 돌려준다.</li>
+                <li>따뜻할 때 다크초콜릿과 코코아 가루를 취향껏 뿌려준다.</li>
+            </ul>   
+                
+        </div>
+
+        <table class="table kal_table">
+          <thead>
+            <tr>
+              <th scope="col">kcal</th>
+              <th scope="col">탄수화물</th>
+              <th scope="col">단백질</th>
+              <th scope="col">지방</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">259</th>
+              <td>54.8g</td>
+              <td>13.2g</td>
+              <td>9g</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="display: flex; align-items: center; margin-top:-10px;">
+          <a href="https://www.youtube.com/">
+            <i class="bi bi-youtube f_youtubeicon"></i>
+          </a>
+          <p class="card-text" style="margin-left: 10px;"><small class="text-muted">영상 보러가기</small></p>
+        </div>
+        
+    </div>
+  </div>
+</div>
+</div>
+  
+<!-- Modal -->
+<div class="modal fade" id="foodModal3" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-body-tertiary">
+        <h1 class="modal-title fs-5 f_h4" id="foodModalLabel">추천제품</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/코코아가루.jpg" alt="코코아가루" class="img-fluid" style="width: 300px; height: auto;">
+        <p><b>허쉬 코코아 파우더 226g</b></p>
+      </div>
+      <div class="modal-footer bg-body-tertiary">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://www.coupang.com/vp/products/5654840286?itemId=11155674712&vendorItemId=80629164051&q=%EB%AC%B4%EA%B0%80%EB%8B%B9+%EC%BD%94%EC%BD%94%EC%95%84&itemsCount=36&searchId=8fc00dd42e924f168ef1bc2383394739&rank=1&isAddedCart" 
+          class="btn btn-outline-success" target="_blank">BUY NOW !</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- 식단 영역 끝 -->
+
+
+   <!-- 풋터 영역 시작 -->
+   <footer class="bg-body-tertiary text-center py-3 pt-5" style="margin-top:150px;">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 pt-5">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="로고" class="image">
+          </a>   
+        </div>
+
+        <div class="col-md-3 pt-2">
+          <h6 class="fw-semibold">FOLLOW</h6>
+          <div class="d-flex justify-content-evenly px-10 mt-4 m-auto w-100">
+            <a href="https://www.youtube.com/" class="btn btn-outline-secondary large-button">
+                <i class="bi bi-youtube large-icon"></i>
+            </a>
+    
+            <a href="https://www.instagram.com/" class="btn btn-outline-secondary large-button">
+                <i class="bi bi-instagram large-icon"></i>
+            </a>
+    
+            <a href="https://www.facebook.com/" class="btn btn-outline-secondary large-button">
+                <i class="bi bi-facebook large-icon"></i>
+            </a>
+
+            <a href="https://www.naver.com/" class="btn btn-outline-secondary large-button">
+              <i class="bi bi-envelope"></i>
+          </a>
+          </div>
+        </div>
+        
+        <div class="col-md-3 pt-2" style="font-family: 'Noto Sans KR', sans-serif;">
+          <h6 class="fw-semibold">고객센터</h6>
+          <i class="bi bi-telephone-fill me-2 fw-bold "> 02-1234-5678</i>
+          <ul class="list-unstyled">
+            <li>fax  02-8765-4321</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3" style="font-family: 'Noto Sans KR', sans-serif;">
+          <ul class="list-unstyled text-muted">
+            <li> <a href="" class="text-decoration-none text-muted small-text">회사소개</a> </li>
+            <li> <a href="" class="text-decoration-none text-muted small-text">인재채용</a> </li>
+            <li> <a href="" class="text-decoration-none text-muted small-text">이용약관</a> </li>
+            <li> <a href="" class="text-decoration-none text-muted small-text">개인정보처리방침</a> </li>
+            <li> <a href="" class="text-decoration-none text-muted small-text">고객센터</a> </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <h6 class="text-muted fw-lighter"> Copyright ⓒ Healthy Pleasure. All rights reseved. </h6> 
+
+    </div>
+
+  
+  </footer>
+  <!-- 풋터 영역 끝 -->
+  
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+  </html>

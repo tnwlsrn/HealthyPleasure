@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- 스타일시트 -->
+     <link rel="stylesheet" href="style.css">
+  
+    </head>
+  <body>
+
+    <!-- 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.jpg" alt="로고" width="250">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto my-2">
+            <div>
+            <li class="nav-item">
+              <a class="nav-link" href="food.html">식단</a>
+            </li>
+            </div>
+            <div>
+            <li class="nav-item">
+              <a class="nav-link" href="exercise.html">운동</a>
+            </li>
+            </div>
+            <div>
+            <li class="nav-item">
+              <a class="nav-link" href="challenge.html">챌린지</a>
+            </li>
+            </div>
+            <div>
+            <li class="nav-item">
+              <a class="nav-link" href="Q&A.html">Q&A</a>
+            </li>
+            </div>
+            <div>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">로그인</a>
+            </li>
+          </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- 네비게이션 영역 끝 -->
+
+    <!-- 로그인 영역 시작 -->
+    <form class="login">
+      <div class="loginran">
+        <div class="input-rectangle">
+          <input type="text" class="form-control" id="username" placeholder="아이디">
+          <input type="password" class="form-control" id="password" placeholder="비밀번호">
+        </div>
+      </div>
+
+      <div class="id-remember">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          아이디 저장
+        </label>
+      </div>
+       
+      <button type="submit" class="btn loginbtn">LOGIN</button>
+
+      <div class="login-links">
+        <a href="#">아이디 찾기</a>
+        <a href="#">비밀번호 찾기</a>
+        <a href="join.html" class="login-links2">회원가입</a>
+
+      </div>
+    
+
+    </form>
+   
+
+
+
+
+    <!-- 로그인 영역 끝-->
+
+
+   <!-- 풋터 영역 시작 -->
+   <footer class="bg-body-tertiary text-center py-3 pt-5" style="margin-top:150px;">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 pt-5">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="로고" class="image">
+          </a>   
+        </div>
+
+        <div class="col-md-3 pt-2">
+          <h6 class="fw-semibold">FOLLOW</h6>
+          <div class="d-flex justify-content-evenly px-10 mt-4 m-auto w-100">
+            <a href="https://www.youtube.com/" class="btn btn-outline-secondary large-button">
+                <i class="bi bi-youtube large-icon"></i>
+            </a>
+    
+            <a href="https://www.instagram.com/" class="btn btn-outline-secondary large-button">
+                <i class="bi bi-instagram large-icon"></i>
+            </a>
+    
+            <a href="https://www.facebook.com/" class="btn btn-outline-secondary large-button">
+                <i class="bi bi-facebook large-icon"></i>
+            </a>
+
+            <a href="https://www.naver.com/" class="btn btn-outline-secondary large-button">
+              <i class="bi bi-envelope"></i>
+          </a>
+          </div>
+        </div>
+        
+        <div class="col-md-3 pt-2" style="font-family: 'Noto Sans KR', sans-serif;">
+          <h6 class="fw-semibold">고객센터</h6>
+          <i class="bi bi-telephone-fill me-2 fw-bold "> 02-1234-5678</i>
+          <ul class="list-unstyled">
+            <li>fax  02-8765-4321</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3" style="font-family: 'Noto Sans KR', sans-serif;">
+          <ul class="list-unstyled text-muted">
+            <li> <a href="" class="text-decoration-none text-muted small-text">회사소개</a> </li>
+            <li> <a href="" class="text-decoration-none text-muted small-text">인재채용</a> </li>
+            <li> <a href="" class="text-decoration-none text-muted small-text">이용약관</a> </li>
+            <li> <a href="" class="text-decoration-none text-muted small-text">개인정보처리방침</a> </li>
+            <li> <a href="" class="text-decoration-none text-muted small-text">고객센터</a> </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <h6 class="text-muted fw-lighter"> Copyright ⓒ Healthy Pleasure. All rights reseved. </h6> 
+
+    </div>
+
+  
+  </footer>
+  <!-- 풋터 영역 끝 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
